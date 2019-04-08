@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<style>
+    ul.menu,
+    .menu li,
+    .menu a {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background-color: black;
+    }
+
+    ul.menu ul {
+        position: absolute;
+        display: none;
+        box-shadow: 3px 3px 2px black;
+    }
+
+    ul.menu {
+        float: left;
+        font-family: sans-serif;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 0 5px;
+    }
+
+    .menu li {
+        float: left;
+        width: auto;
+        position: relative;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 0 20px;
+        line-height: 45px;
+        height: 45px;
+        float: left;
+        transition: all 0.1s linear;
+        
+    }
+
+    .menu li:hover>ul.submenu-1 {
+        display: block;
+        top: 45px;
+        left: 0;
+        padding: 5px;
+        width: 200px;
+        border-radius: 0 0 5px 5px;
+        background-color: black;
+    }
+    .menu li:hover>a {
+        color: green;
+    }
+</style>
+
+<body>
+    <nav id="menu">
+        <ul class="menu">
+            <li><a href="#">My dashboard</a></li>
+            <li><a href="#">Likes</a>
+            <li><a href="#">Views</a>
+                <ul class="submenu-1">
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#"> Sign Out</a>
+
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Uploads</a></li>
+            <li><a href="#">Videos</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

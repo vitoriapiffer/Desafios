@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+
+    <form style="margin-right: 700px" name="dadospessoais" method="post">
+        <fieldset>
+            <legend>Dados pessoais: </legend>
+
+            Nome: <input type="text" name="nome" />  <br />  <br />
+            Endereço: <input type="text" name="endereco" />  <br />  <br />
+            Cidade: <input type="text" name="cidade" />  <br />  <br />
+            Estado:
+            
+            <select>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Bahia</option>
+                <option>Minas Gerais</option>
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>Amazonas</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+                <option>Distrito Federal</option>
+                <option>Espírito Santo</option>
+                <option>Goiás</option>
+                <option>Maranhão</option>
+                <option>Mato Grosso</option>
+                <option>Mato Grosso Do Sul</option>
+                <option>Pará</option>
+                <option>Paraíba</option>
+                <option>Paraná</option>
+                <option>Pernambuco</option>
+                <option>Piauí</option>
+                <option>Rio Grande do Norte</option>
+                <option>Rio Grande do Sul</option>
+                <option>Rondônia</option>
+                <option>Roraima</option>
+                <option>Santa Catarina</option>
+                <option>Sergipe</option>
+                <option>Tocantins</option>
+                
+
+            </select>
+        </fieldset>
+        <br />
+
+        <form name="dadosprofi" method="post">
+            <fieldset >
+                <legend>Dados profissionais: </legend>
+
+                Natureza do cargo:
+                <br />
+                <input type="radio" id="gerencia" name="cargo" value="ge" />
+                <label for="gerencia">Gerência</label> 
+
+                <input type="radio" id="financeiro" name="cargo" value="finan" />
+                <label for="financeiro">Financeiro</label> 
+
+                <input type="radio" id="recepcao" name="cargo" value="recep" />
+                <label for="recepcao">Recepção</label> 
+
+                <input type="radio" id="adm" name="cargo" value="adm" />
+                <label for="adm">Administrativo</label> 
+
+                <input type="radio" id="juridico" name="cargo" value="juri" />
+                <label for="juridico">Jurídico</label> <br />
+                <br />
+
+                Área de interesse:<br />
+                <input type="checkbox" name="prefs" />Computação 
+                <input type="checkbox" name="prefs"/>Biologia 
+                <input type="checkbox" name="prefs"/>Meio Ambiente 
+                <input type="checkbox" name="prefs" />Engenharia 
+                <input type="checkbox" name="prefs" />História 
+                <br />
+                <br />
+
+                Mini-curriculo:
+                
+                <form>
+                    <textarea rows="9" cols="70"></textarea>
+                </form>
+                <br>
+                <br />
+                <input type="submit" value="Enviar" />
+                <input type="submit" value="Limpar" />
+
+
+        </form>
+
+</body>
+
+</html>
